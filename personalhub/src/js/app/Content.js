@@ -10,7 +10,6 @@ export default class Content extends React.Component {
             <div id="content">
                 <div id="explanation-container">
                     <Explanation />
-                    <Footer />
                 </div>
                 <div id="side-menu-container">
                     <SideMenu />
