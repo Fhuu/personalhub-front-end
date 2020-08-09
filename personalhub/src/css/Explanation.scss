@@ -13,17 +13,17 @@
 
     #explanation1 {
         background-image: url(../resources/images/background-1.jpg);
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
     #explanation2 {
         background-image: url(../resources/images/background-1.jpg);
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
     #explanation3 {
         background-image: url(../resources/images/background-1.jpg);
-        min-height: 50vh;
+        min-height: 40vh;
     }
 
     .explanations {
@@ -40,9 +40,9 @@
                 
         p {
             background-color: $dark-green;
-            padding: 5px;
+            padding: 40px;
             text-align: justify;
-            margin: 5px 10px;
+            margin: 10px 20px;
             transform: translate(-50%,-50%);
         }
 
