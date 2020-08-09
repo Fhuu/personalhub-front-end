@@ -1,0 +1,9 @@
+@import "_colorSetup.scss";
+
+#side-menu {
+    position: fixed;
+    background: $dark-green;
+    height: 100%;
+    width: 100%;
+    color: $xanadu;
+}
