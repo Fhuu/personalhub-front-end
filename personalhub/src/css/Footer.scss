@@ -1,0 +1,15 @@
+@import '_colorSetup.scss';
+
+#footer {
+    position: relative;
+    background-color: $dark-green;
+    color: $xanadu;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    span {
+        padding: 10px;
+    }
+}
