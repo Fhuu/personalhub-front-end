@@ -1,0 +1,12 @@
+#explanation-container {
+    grid-area: explanation;
+}
+
+#side-menu-container {
+    grid-area: sidemenu;
+}
+
+#content {
+    display: grid;
+    grid-template-areas: "explanation explanation explanation explanation explanation sidemenu";
+}
