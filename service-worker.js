@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/personalhub-front-end/precache-manifest.4b5f13a7b859a8f07cd241c7e56b8486.js"
+  "/personalhub-front-end/precache-manifest.574bb4ad7f5d0730e4e69ed295681d8a.js"
 );
 
 self.addEventListener('message', (event) => {

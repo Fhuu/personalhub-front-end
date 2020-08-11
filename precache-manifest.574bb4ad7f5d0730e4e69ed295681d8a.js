@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7a1feb273e923fed1eca6e325c439dca",
+    "revision": "60ffa195e07ef83a35a18487cd5f09e5",
     "url": "/personalhub-front-end/index.html"
   },
   {
-    "revision": "9b2e8dfc69eb039a6586",
-    "url": "/personalhub-front-end/static/css/main.6e188690.chunk.css"
+    "revision": "f9efc4790242e91d3963",
+    "url": "/personalhub-front-end/static/css/main.e853ccbc.chunk.css"
   },
   {
-    "revision": "9b89852cfb4efd44f459",
-    "url": "/personalhub-front-end/static/js/2.118234a7.chunk.js"
+    "revision": "977dabccac6fdf5f1d30",
+    "url": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js"
   },
   {
     "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
-    "url": "/personalhub-front-end/static/js/2.118234a7.chunk.js.LICENSE.txt"
+    "url": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "9b2e8dfc69eb039a6586",
-    "url": "/personalhub-front-end/static/js/main.8e8ec2e8.chunk.js"
+    "revision": "f9efc4790242e91d3963",
+    "url": "/personalhub-front-end/static/js/main.85d00a37.chunk.js"
   },
   {
     "revision": "f82437f9721e882bac78",
     "url": "/personalhub-front-end/static/js/runtime-main.add1e5a8.js"
   },
   {
-    "revision": "ec2fba1cb45d7095ec347f47d6d7cff0",
-    "url": "/personalhub-front-end/static/media/Logo.ec2fba1c.PNG"
+    "revision": "f1b4d0fdf6a5a27a32068e9fea5c06e1",
+    "url": "/personalhub-front-end/static/media/Logo.f1b4d0fd.PNG"
   },
   {
     "revision": "833e91343f13834cb7c1452437137105",

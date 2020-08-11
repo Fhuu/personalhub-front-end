@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/personalhub-front-end/static/css/main.6e188690.chunk.css",
-    "main.js": "/personalhub-front-end/static/js/main.8e8ec2e8.chunk.js",
-    "main.js.map": "/personalhub-front-end/static/js/main.8e8ec2e8.chunk.js.map",
+    "main.css": "/personalhub-front-end/static/css/main.e853ccbc.chunk.css",
+    "main.js": "/personalhub-front-end/static/js/main.85d00a37.chunk.js",
+    "main.js.map": "/personalhub-front-end/static/js/main.85d00a37.chunk.js.map",
     "runtime-main.js": "/personalhub-front-end/static/js/runtime-main.add1e5a8.js",
     "runtime-main.js.map": "/personalhub-front-end/static/js/runtime-main.add1e5a8.js.map",
-    "static/js/2.118234a7.chunk.js": "/personalhub-front-end/static/js/2.118234a7.chunk.js",
-    "static/js/2.118234a7.chunk.js.map": "/personalhub-front-end/static/js/2.118234a7.chunk.js.map",
+    "static/js/2.9f60b45d.chunk.js": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js",
+    "static/js/2.9f60b45d.chunk.js.map": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js.map",
     "index.html": "/personalhub-front-end/index.html",
-    "precache-manifest.4b5f13a7b859a8f07cd241c7e56b8486.js": "/personalhub-front-end/precache-manifest.4b5f13a7b859a8f07cd241c7e56b8486.js",
+    "precache-manifest.574bb4ad7f5d0730e4e69ed295681d8a.js": "/personalhub-front-end/precache-manifest.574bb4ad7f5d0730e4e69ed295681d8a.js",
     "service-worker.js": "/personalhub-front-end/service-worker.js",
-    "static/css/main.6e188690.chunk.css.map": "/personalhub-front-end/static/css/main.6e188690.chunk.css.map",
-    "static/js/2.118234a7.chunk.js.LICENSE.txt": "/personalhub-front-end/static/js/2.118234a7.chunk.js.LICENSE.txt",
-    "static/media/Logo.PNG": "/personalhub-front-end/static/media/Logo.ec2fba1c.PNG",
+    "static/css/main.e853ccbc.chunk.css.map": "/personalhub-front-end/static/css/main.e853ccbc.chunk.css.map",
+    "static/js/2.9f60b45d.chunk.js.LICENSE.txt": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js.LICENSE.txt",
+    "static/media/Logo.PNG": "/personalhub-front-end/static/media/Logo.f1b4d0fd.PNG",
     "static/media/Explanation.scss": "/personalhub-front-end/static/media/background-1.833e9134.jpg",
     "static/media/logo.svg": "/personalhub-front-end/static/media/logo.5d5d9eef.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.add1e5a8.js",
-    "static/js/2.118234a7.chunk.js",
-    "static/css/main.6e188690.chunk.css",
-    "static/js/main.8e8ec2e8.chunk.js"
+    "static/js/2.9f60b45d.chunk.js",
+    "static/css/main.e853ccbc.chunk.css",
+    "static/js/main.85d00a37.chunk.js"
   ]
 }
