@@ -1,5 +1,5 @@
 import React from 'react';
-import Form from './UserForm/Form'
+import UserForm from './UserForm/UserForm'
 import logo from '../../resources/logo/Logo.PNG';
 import '../../css/SideMenu.scss'
 
@@ -9,7 +9,7 @@ export default class SideMenu extends React.Component {
             <div id="side-menu">
                 <img id="logo" src={logo}/>
                 <ul id="navigation">
-                    <li onClick={console.log("hi")}>Log In</li>
+                    <UserForm />
                 </ul>
             </div>
         )
