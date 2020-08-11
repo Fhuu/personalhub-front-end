@@ -1,12 +1,29 @@
 #explanation-container {
     grid-area: explanation;
 }
-
 #side-menu-container {
+    display: none;
     grid-area: sidemenu;
 }
 
 #content {
-    display: grid;
-    grid-template-areas: "explanation explanation explanation explanation explanation sidemenu";
+    display: block;
+}
+
+@media only screen and (min-width : 800px) {
+    #side-menu-container {
+        display: block;
+    }
+    #content {
+        display: grid;
+        grid-template-areas: "explanation explanation explanation explanation sidemenu";
+    }
+    
+}
+
+@media only screen and (min-width: 1200px) {
+    #content {
+        grid-template-areas: "explanation explanation explanation explanation explanation sidemenu";
+    }
+    
 }

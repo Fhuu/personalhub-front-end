@@ -1,9 +1,43 @@
 @import "_colorSetup.scss";
 
 #side-menu {
+    width: 20%;
+    right: 0;
     position: fixed;
-    background: $dark-green;
+    background: $header-mint-shade;
     height: 100%;
-    width: 100%;
-    color: $xanadu;
+    color: $lightest-mint-shade;
+    text-align: center;
+
+    
+
+    #logo {
+        width: 100%;
+    }
+
+    #navigation {
+        margin-top: 10vh;
+        display: flex;
+        position: absolute;
+        transform: translate(-50%,0);
+        left: 50%;
+        list-style: none;
+
+        li {
+            border: 1px solid $lightest-mint-shade;
+            padding: 10px;
+        }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    #side-menu {
+        width: 20%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #side-menu {
+        width: 16.7%;
+    }
 }
