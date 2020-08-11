@@ -22,10 +22,26 @@
         transform: translate(-50%,0);
         left: 50%;
         list-style: none;
+        min-width: 10vw;
+        max-width: 15vw;
 
         li {
+            position: absolute;
+            width: 100%;
             border: 1px solid $lightest-mint-shade;
             padding: 10px;
+            transform: translate(-50%,0);
+            left: 50%;
+        }
+
+        li:hover {
+            cursor: pointer;
+            border-left : 3px;
+            border-right: 3px;
+            border-style: solid;
+            border-color: $lightest-mint-shade-highlight;
+            color: $lightest-mint-shade-highlight;
+            font-weight: bolder;
         }
     }
 }
