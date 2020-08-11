@@ -14,6 +14,7 @@ export default class UserForm extends React.Component {
 
     showForm = () => {
         if(this.state.showForm) {
+            document.getElementsByTagName("body")[0].style.overflow = "hidden";
             return (<LoginForm />)
         }
         return(
