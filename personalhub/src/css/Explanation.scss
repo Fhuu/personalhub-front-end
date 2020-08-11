@@ -13,7 +13,7 @@
         position: relative;
 
         .content-container {
-            top: 25%;
+            top: 10%;
             position: absolute;
         }
                 
@@ -31,9 +31,19 @@
 @media only screen and (min-width:600px) {
     #explanation {
     
+        
+
         .explanations {
                     
+            .content-container {
+                top: 25%;
+            }
+
             p {
+                position: relative;
+                width: 70%;
+                left: 40%;
+                transform: translate(-41%,0);
                 background-color: $dark-green;
                 padding: 20px;
                 text-align: justify;
@@ -51,6 +61,9 @@
         .explanations {
 
             p {
+                width: 70%;
+                left: 40%;
+                transform: translate(-40%,0);
                 background-color: $dark-green;
                 padding: 50px;
                 text-align: justify;
