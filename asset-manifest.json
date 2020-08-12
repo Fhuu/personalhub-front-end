@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/personalhub-front-end/static/css/main.dafcfab3.chunk.css",
+    "main.css": "/personalhub-front-end/static/css/main.3f395831.chunk.css",
     "main.js": "/personalhub-front-end/static/js/main.19fdb4c7.chunk.js",
     "main.js.map": "/personalhub-front-end/static/js/main.19fdb4c7.chunk.js.map",
     "runtime-main.js": "/personalhub-front-end/static/js/runtime-main.add1e5a8.js",
@@ -8,9 +8,9 @@
     "static/js/2.9f60b45d.chunk.js": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js",
     "static/js/2.9f60b45d.chunk.js.map": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js.map",
     "index.html": "/personalhub-front-end/index.html",
-    "precache-manifest.d42754998eba60d6033347cc47310d81.js": "/personalhub-front-end/precache-manifest.d42754998eba60d6033347cc47310d81.js",
+    "precache-manifest.37c027969e17f3db2f24d68075d7b25f.js": "/personalhub-front-end/precache-manifest.37c027969e17f3db2f24d68075d7b25f.js",
     "service-worker.js": "/personalhub-front-end/service-worker.js",
-    "static/css/main.dafcfab3.chunk.css.map": "/personalhub-front-end/static/css/main.dafcfab3.chunk.css.map",
+    "static/css/main.3f395831.chunk.css.map": "/personalhub-front-end/static/css/main.3f395831.chunk.css.map",
     "static/js/2.9f60b45d.chunk.js.LICENSE.txt": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js.LICENSE.txt",
     "static/media/Logo.PNG": "/personalhub-front-end/static/media/Logo.f1b4d0fd.PNG",
     "static/media/Explanation.scss": "/personalhub-front-end/static/media/background-1.833e9134.jpg",
@@ -19,7 +19,7 @@
   "entrypoints": [
     "static/js/runtime-main.add1e5a8.js",
     "static/js/2.9f60b45d.chunk.js",
-    "static/css/main.dafcfab3.chunk.css",
+    "static/css/main.3f395831.chunk.css",
     "static/js/main.19fdb4c7.chunk.js"
   ]
 }
