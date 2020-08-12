@@ -1,4 +1,5 @@
 #explanation-container {
+    height: 100%;
     grid-area: explanation;
 }
 #side-menu-container {
@@ -7,6 +8,7 @@
 }
 
 #content {
+    position: relative;
     display: block;
 }
 

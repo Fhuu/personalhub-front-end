@@ -6,7 +6,7 @@
 
     .explanations {
         background-image: url(../resources/images/background-1.jpg);
-        min-height: 400px;
+        min-height: 55vh;
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed; 
@@ -19,9 +19,9 @@
                 
         p {
             background-color: $dark-green;
-            padding: 20px;
+            padding: 10px;
             text-align: justify;
-            margin: 20px;
+            margin: 0px 40px 0px 40px;
             border-radius: 15px;
         }
 
