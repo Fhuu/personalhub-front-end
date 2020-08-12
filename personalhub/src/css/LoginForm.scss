@@ -13,7 +13,7 @@
     #overlay {
         width: 60vw;
         height: 70vh;
-        background: $xanadu;
+        background: $dark-green;
         position: fixed;
         left: 50%;
         top: 50%;
@@ -45,7 +45,7 @@
             border-bottom: 1px solid $lightest-mint-shade;
             border-bottom-left-radius: 10px;
             border-bottom-right-radius: 10px;
-            background-color: $xanadu;
+            background-color: $dark-green;
         }
 
         input::placeholder {
@@ -75,12 +75,18 @@
         button {
             padding: 10px 50px;
             margin-bottom: 10px;
-            background: $mint-shade-3;
+            background: $mint-shade-4;
             border: none;
             border-radius: 20px;
-            color: $lightest-mint-shade-highlight;
+            color: $lightest-mint-shade;
             font-weight: bold;
             font-size: 1.1em;
+            outline: none;
+        }
+
+        button:hover {
+            color: $lightest-mint-shade-highlight;
+            background-color: $mint-shade-3;
         }
     }
 
