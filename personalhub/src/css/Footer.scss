@@ -13,5 +13,14 @@
 
     span {
         padding: 10px;
+        
+        a{
+            color: white;
+            text-decoration: none;   
+        }
+
+        a:hover{
+            color: $lightest-mint-shade;
+        }
     }
 }
