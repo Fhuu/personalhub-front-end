@@ -3,17 +3,27 @@ import ReactDOM from 'react-dom'
 import '../../../css/SignupForm.scss';
 
 export default class Form extends React.Component {
-    enableButton() {
-        if(document.getElementById("username-field").value.trim() !== ""
-        && document.getElementById("email-field").value.trim() !== "" 
-        && document.getElementById("password-field").value.trim() !== "") {
-            document.getElementById("signup-btn").disabled = false;
+    constructor(props) {
+        super(props);
+        this.state={
+            disabled : true
+        }
+    }
+    enableButton = () => {
+        if(document.getElementById("username-field").value.trim().length !== 0
+        && document.getElementById("email-field").value.trim().length !== 0
+        && document.getElementById("password-field").value.trim().length !== 0) {
+            this.setState(() => ({disabled : false}));
+            return;
         } else {
-            document.getElementById("signup-btn").disabled = true;
+            console.log("why am i here");
+            this.setState(() => ({disabled : true}));
+            return;
         }
     }
     
     signup() {
+        console.log("fired")
         fetch("/user/create", {
             method : "POST",
             headers : {'content-type' : 'application/json'},
@@ -43,7 +53,7 @@ export default class Form extends React.Component {
                             <label htmlFor="password">Password</label>
                             <input type="password" id="password-field" placeholder="password" onKeyUp={this.enableButton}/>
                             <br/>
-                            <input type="button" value="Sign Up" id="signup-btn" onClick={this.login} disabled/>
+                            <input type="button" value="Sign Up" id="signup-btn" onClick={this.signup} disabled={this.state.disabled}/>
                         </form>
                     </div>
                 </div>            

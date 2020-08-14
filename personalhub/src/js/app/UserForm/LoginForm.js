@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom'
 import '../../../css/LoginForm.scss';
 
 export default class Form extends React.Component {
-    enableButton() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            disabled : true
+        }
+    }
+    enableButton = () => {
         if(document.getElementById("username-field").value.trim() !== "" && document.getElementById("password-field").value.trim() !== "") {
-            document.getElementById("login-btn").disabled = false;
+            this.setState(() => ({disabled : false}));
         } else {
-            document.getElementById("login-btn").disabled = true;
+            this.setState(() => ({disabled : true}));
         }
     }
 
@@ -21,6 +27,7 @@ export default class Form extends React.Component {
             })
         }).then((Response) => {
             Response.json().then(data => {
+                console.log(data.loginStatus);
                 if(data.loginStatus === "1")
                 window.location.reload();
             })
@@ -38,7 +45,7 @@ export default class Form extends React.Component {
                             <label htmlFor="password">Password</label>
                             <input type="password" id="password-field" placeholder="password" onKeyUp={this.enableButton}/>
                             <br/>
-                            <input type="button" value="Log in" id="login-btn" onClick={this.login} disabled/>
+                            <input type="button" value="Log in" id="login-btn" onClick={this.login} disabled={this.state.disabled}/>
                         </form>
                     </div>
                 </div>            
