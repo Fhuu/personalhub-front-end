@@ -50,9 +50,11 @@ export default class UserForm extends React.Component {
                 </>
             )
         }
-        console.log("logged in");
         return(
-            <li id="username">Hi, {this.state.username}</li>
+            <>
+                <li id="username-btn">Hi, {this.state.username}</li>
+                <li>Log Out</li>
+            </>
         )
         
     }
