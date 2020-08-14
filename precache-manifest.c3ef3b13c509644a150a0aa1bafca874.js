@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "269d41b27a44f3b67f65f81dc40f6ecd",
+    "revision": "7f6a1850badabdbfdfa3c3eef8415299",
     "url": "/personalhub-front-end/index.html"
   },
   {
-    "revision": "11eaccb4ea1ad841144b",
-    "url": "/personalhub-front-end/static/css/main.a8e085c9.chunk.css"
+    "revision": "c4fc9dc5681dea27f6e6",
+    "url": "/personalhub-front-end/static/css/main.eb87b9ce.chunk.css"
   },
   {
     "revision": "977dabccac6fdf5f1d30",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personalhub-front-end/static/js/2.9f60b45d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "11eaccb4ea1ad841144b",
-    "url": "/personalhub-front-end/static/js/main.6f4985a3.chunk.js"
+    "revision": "c4fc9dc5681dea27f6e6",
+    "url": "/personalhub-front-end/static/js/main.bfffe908.chunk.js"
   },
   {
     "revision": "f82437f9721e882bac78",
