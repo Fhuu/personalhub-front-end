@@ -18,20 +18,25 @@
     #navigation {
         margin-top: 10vh;
         display: flex;
+        flex-direction: column;
         position: absolute;
-        transform: translate(-50%,0);
+        transform: translate(-80%,0);
         left: 50%;
+        text-align: center;
         list-style: none;
         min-width: 10vw;
         max-width: 15vw;
 
+        #show-login-form {
+            margin-bottom: 20px;
+        }
+
         li {
-            position: absolute;
             width: 100%;
             border: 1px solid $lightest-mint-shade;
             padding: 10px;
-            transform: translate(-50%,0);
-            left: 50%;
+            margin: 10px;
+            font-size: 80%;
         }
 
         li:hover {
@@ -52,8 +57,20 @@
     }
 }
 
+@media only screen and (min-width: 1100px) {
+    #side-menu {
+        #navigation {
+            transform: translate(-75%);
+        }
+    }
+}
+
 @media only screen and (min-width: 1200px) {
     #side-menu {
         width: 16.7%;
+
+        #navigation {
+            transform: translate(-70%,0);
+        }
     }
 }

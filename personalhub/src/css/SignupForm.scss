@@ -1,6 +1,6 @@
 @import '_colorSetup.scss';
 
-#login-form-container {
+#signup-form-container {
     position: fixed;
     left: 50%;
     top: 50%;
@@ -22,7 +22,7 @@
 
     }
 
-    #login-form {
+    #signup-form {
         position: fixed;
         display: flex;
         flex-direction: column;
@@ -74,7 +74,7 @@
             color: $lightest-mint-shade-highlight;
         }
 
-        #login-btn {
+        #signup-btn {
             padding: 10px 50px;
             margin-bottom: 10px;
             background: $mint-shade-4;
@@ -86,12 +86,12 @@
             outline: none;
         }
 
-        #login-btn:hover {
+        #signup-btn:hover {
             color: $lightest-mint-shade-highlight;
             background-color: $mint-shade-3;
         }
 
-        #login-btn:disabled {
+        #signup-btn:disabled {
             background: $mint-shade-5;
             color: $mint-shade-4;
         }

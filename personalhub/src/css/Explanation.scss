@@ -1,15 +1,14 @@
 @import "_colorSetup";
 
 #explanation {
-    background: white;
     color: $mint-shade-2;
+    background-image: url(../resources/images/background-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     .explanations {
-        background-image: url(../resources/images/background-1.jpg);
-        min-height: 55vh;
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed; 
+        min-height: 55vh; 
         position: relative;
 
         .content-container {
@@ -24,7 +23,6 @@
             margin: 0px 40px 0px 40px;
             border-radius: 15px;
         }
-
     } 
 }
 

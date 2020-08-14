@@ -10,6 +10,7 @@ export default class SideMenu extends React.Component {
                 <img id="logo" src={logo}/>
                 <ul id="navigation">
                     <UserForm />
+                    <li>Create room</li>
                 </ul>
             </div>
         )
