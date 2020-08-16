@@ -24,7 +24,7 @@ export default class Form extends React.Component {
     
     signup() {
         console.log("fired")
-        fetch("https://myhubservices.herokuapp.com/user/create", {
+        fetch("/user/create", {
             method : "POST",
             headers : {'content-type' : 'application/json'},
             body : JSON.stringify({
