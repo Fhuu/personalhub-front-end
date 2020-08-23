@@ -15,7 +15,7 @@ export default class UserForm extends React.Component {
 
     componentDidMount = () => {
         const url = 'https://myhubservices.herokuapp.com';
-        fetch(url + "/user/checkSession", {
+        fetch("/api/user/checkSession", {
             method : 'GET',
             credentials: 'include'
         }).then(response =>  {

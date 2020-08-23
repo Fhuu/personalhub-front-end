@@ -19,7 +19,7 @@ export default class Form extends React.Component {
 
     login() {
         const url = 'https://myhubservices.herokuapp.com';
-        fetch(url + "/user/login", {
+        fetch("/api/user/login", {
             method : "POST",
             credentials: 'include',
             headers : {'content-type' : 'application/json'},
