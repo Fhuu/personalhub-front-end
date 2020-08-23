@@ -20,6 +20,7 @@ export default class Form extends React.Component {
     login() {
         fetch("/user/login", {
             method : "POST",
+            credentials: 'include',
             headers : {'content-type' : 'application/json'},
             body : JSON.stringify({
                 username : document.getElementById("username-field").value,

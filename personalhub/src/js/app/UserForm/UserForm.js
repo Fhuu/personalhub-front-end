@@ -15,13 +15,16 @@ export default class UserForm extends React.Component {
 
     componentDidMount = () => {
         fetch("/user/checkSession", {
-            method : 'GET'
+            method : 'GET',
+            credentials: 'include'
         }).then(response =>  {
-            if(response) {
+            if(response.status === 200) {
                 response.json().then(data => {
+                    console.log(data.loginStatus, data.username)
                     this.setState(() => ({loginStatus : data.loginStatus, username : data.username}))
                 })
             }
+            console.log(response)
         })
     }
 

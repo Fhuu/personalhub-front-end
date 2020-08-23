@@ -26,6 +26,7 @@ export default class Form extends React.Component {
         console.log("fired")
         fetch("/user/create", {
             method : "POST",
+            credentials: 'include',
             headers : {'content-type' : 'application/json'},
             body : JSON.stringify({
                 username : document.getElementById("username-field").value,
