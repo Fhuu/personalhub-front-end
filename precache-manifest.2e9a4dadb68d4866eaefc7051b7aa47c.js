@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ffdb38824b587b61d9d2236267d3c505",
+    "revision": "d3752a01ed3c0d1b2a363dce243d5796",
     "url": "/personalhub-front-end/index.html"
   },
   {
-    "revision": "abe39f66bb023fb48e27",
-    "url": "/personalhub-front-end/static/css/main.9315b7d2.chunk.css"
+    "revision": "5f01159c2d43a30565be",
+    "url": "/personalhub-front-end/static/css/main.73db9666.chunk.css"
   },
   {
     "revision": "ca02eb38dd697230720e",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/personalhub-front-end/static/js/2.12ff543d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "abe39f66bb023fb48e27",
-    "url": "/personalhub-front-end/static/js/main.4a9162b1.chunk.js"
+    "revision": "5f01159c2d43a30565be",
+    "url": "/personalhub-front-end/static/js/main.df1030c6.chunk.js"
   },
   {
     "revision": "5c881e8780a8573cf53d",
@@ -30,9 +30,5 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "833e91343f13834cb7c1452437137105",
     "url": "/personalhub-front-end/static/media/background-1.833e9134.jpg"
-  },
-  {
-    "revision": "5d5d9eefa31e5e13a6610d9fa7a283bb",
-    "url": "/personalhub-front-end/static/media/logo.5d5d9eef.svg"
   }
 ]);
