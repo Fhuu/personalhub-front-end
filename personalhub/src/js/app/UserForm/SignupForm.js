@@ -16,7 +16,6 @@ export default class Form extends React.Component {
             this.setState(() => ({disabled : false}));
             return;
         } else {
-            console.log("why am i here");
             this.setState(() => ({disabled : true}));
             return;
         }

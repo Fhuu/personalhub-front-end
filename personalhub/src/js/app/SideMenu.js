@@ -26,9 +26,13 @@ export default class SideMenu extends React.Component {
     togleMenu = () => {
             if(!this.state.showMenu && window.screen.width < 800) {
                 document.getElementById("side-menu").style.display = "none";
+                document.getElementsByTagName("body")[0].style.overflow = "scroll";
             }
             else {
                 document.getElementById("side-menu").style.display = "block";
+                if(window.screen.width < 800) {
+                    document.getElementsByTagName("body")[0].style.overflow = "hidden";
+                }
             }
     }
 

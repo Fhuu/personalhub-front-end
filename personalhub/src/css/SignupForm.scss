@@ -11,8 +11,8 @@
     background-color: rgba(32,32,32,.9);
 
     #overlay {
-        width: 60vw;
-        height: 70vh;
+        width: 90vw;
+        height: 60vh;
         background: $dark-green;
         position: fixed;
         left: 50%;
@@ -95,6 +95,13 @@
             color: $mint-shade-4;
         }
     }
-
 }
 
+@media only screen and (min-width : 800px) {
+    #login-form-container{
+        #overlay {
+            width: 60vw;
+            height: 70vh;
+        }
+    }
+}
