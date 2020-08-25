@@ -17,9 +17,9 @@ export default class Form extends React.Component {
         }
     }
 
-    login() {
-        const url = 'https://myhubservices.herokuapp.com';
-        fetch(url + "/user/login", {
+    login = () => {
+        const url = "https://myhubservices.herokuapp.com";
+        fetch(url + "/api/user/login", {
             method : "POST",
             credentials: 'include',
             headers : {'content-type' : 'application/json'},
@@ -28,11 +28,12 @@ export default class Form extends React.Component {
                 password : document.getElementById("password-field").value
             })
         }).then((Response) => {
-            Response.json().then(data => {
-                console.log(data.loginStatus);
-                if(data.loginStatus === "1")
-                window.location.reload();
-            })
+            if(Response.status === 200) {
+                Response.json().then(data => {
+                    console.log(data.loginStatus);
+                    this.props.onAuth(data.loginStatus, data.username);
+                })
+            }
         })
     }
 
@@ -42,6 +43,7 @@ export default class Form extends React.Component {
                 <div id="login-form-container">
                     <div id="overlay">
                         <form id="login-form">
+                            <label>3RD PARTY COOKIES ARE REQUIRED FOR AUTHENTICATION</label>
                             <label htmlFor="username">Username</label>
                             <input type="text" id="username-field" placeholder="username" autoFocus="on" onKeyUp={this.enableButton}/>
                             <label htmlFor="password">Password</label>

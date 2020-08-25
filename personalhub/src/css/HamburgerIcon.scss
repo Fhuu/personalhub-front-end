@@ -1,0 +1,39 @@
+@import '_colorSetup.scss';
+
+#icon-container {
+    position: absolute;
+    z-index: 1000;
+    background-color: rgba($color: #ffffff, $alpha: .7);
+    border-radius: 10px;
+    border: 3px solid black;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 3vw;
+    width: 50px;
+    height : 50px;
+    
+    div {
+        position: relative;
+        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 5px;
+        border-radius: 15px;
+        background: black;
+    }
+
+    div:nth-child(1) {
+        margin-top: -10px;
+    }
+    div:nth-child(2) {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (min-width : 800px) {
+    #icon-container {
+        display: none;
+    }
+}

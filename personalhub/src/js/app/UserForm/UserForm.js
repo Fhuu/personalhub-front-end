@@ -13,9 +13,18 @@ export default class UserForm extends React.Component {
         }
     }
 
+    changeAuthState = (loginState, loginUsername) => {
+        this.setState({loginStatus : loginState, username : loginUsername}, () => {
+            if(loginState) {
+                this.changeStateToUnshowLoginForm();
+                this.changeStateToUnshowSignupForm();
+            }
+        })
+    }
+
     componentDidMount = () => {
-        const url = 'https://myhubservices.herokuapp.com';
-        fetch(url + "/user/checkSession", {
+        const url = "https://myhubservices.herokuapp.com";
+        fetch(url + "/api/user/status", {
             method : 'GET',
             credentials: 'include'
         }).then(response =>  {
@@ -29,22 +38,47 @@ export default class UserForm extends React.Component {
         })
     }
 
+    logout = () => {
+        const url = "https://myhubservices.herokuapp.com";
+        fetch(url + "/api/user/logout", {
+            method : 'GET',
+            credentials : 'include'
+        }).then(response => {
+            if(response.status === 200) {
+                response.json().then(data => {
+                    this.setState(() => ({
+                        loginStatus : data.loginStatus, 
+                        username : ""
+                    }))
+                })
+            }
+        })
+    }
+
     changeStateToShowLoginForm = () => {
         this.setState({showLoginForm : true})
+    }
+
+    changeStateToUnshowLoginForm = () => {
+        this.setState({showLoginForm : false})
     }
 
     changeStateToShowSignupForm = () => {
         this.setState({showSignupForm : true})
     }
 
+    changeStateToUnshowSignupForm = () => {
+        this.setState({showSignupForm : false})
+    }
+
     showForm = () => {
         if(this.state.showLoginForm) {
             document.getElementsByTagName("body")[0].style.overflow = "hidden";
-            return (<LoginForm />)
+            return (<LoginForm onAuth={this.changeAuthState}/>)
         }
         if(this.state.showSignupForm) {
             document.getElementsByTagName("body")[0].style.overflow = "hidden";
-            return (<SignupForm />)
+            return (<SignupForm onAuth={this.changeAuthState}/>)
         }
         if(!this.state.loginStatus) {
             return(
@@ -57,7 +91,7 @@ export default class UserForm extends React.Component {
         return(
             <>
                 <li id="username-btn">Hi, {this.state.username}</li>
-                <li>Log Out</li>
+                <li onClick={this.logout}>Log Out</li>
             </>
         )
         

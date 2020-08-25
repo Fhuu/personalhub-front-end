@@ -1,7 +1,6 @@
 import React from 'react';
 import Explanation from './Explanation';
 import SideMenu from './SideMenu';
-import Footer from './Footer'
 import '../../css/Content.scss';
 
 export default class Content extends React.Component {

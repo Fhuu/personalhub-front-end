@@ -7,12 +7,12 @@
     transform: translate(-50%,-50%);
     height: 100%;
     width: 100%;
-    z-index: 4;
+    z-index: 15;
     background-color: rgba(32,32,32,.9);
 
     #overlay {
-        width: 60vw;
-        height: 70vh;
+        width: 90vw;
+        height: 60vh;
         background: $dark-green;
         position: fixed;
         left: 50%;
@@ -35,6 +35,7 @@
         label {
             margin: 10px;
             color: $lightest-mint-shade;
+            text-align: center;
         }
     
         input {
@@ -43,8 +44,6 @@
             padding: 10px 5px;
             border: none;
             border-bottom: 1px solid $lightest-mint-shade;
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
             background-color: $dark-green;
             color: $lightest-mint-shade;
             text-align: center;
@@ -99,3 +98,11 @@
 
 }
 
+@media only screen and (min-width : 800px) {
+    #login-form-container{
+        #overlay {
+            width: 60vw;
+            height: 70vh;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+@import '_colorSetup.scss';
+
+#mobile-header-container {
+    background: $header-mint-shade;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: row;
+    padding: 10px 0;
+
+    #mobile-logo {
+        height: 70px;
+        margin: 10px;
+        margin-left: 0;
+    }
+}
+
+@media only screen and (min-width : 800px) {
+    #mobile-header-container{
+        display: none;
+    }
+}
